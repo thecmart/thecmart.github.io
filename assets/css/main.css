@@ -2143,7 +2143,6 @@ input, select, textarea {
 			}
 
 			.image.avatar img {
-				border-radius: 100%;
 				width: 100%;
 			}
 
@@ -2641,13 +2640,26 @@ input, select, textarea {
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 10em;
+			width: 12em;
+			margin-top:-100px;
 		}
+
+		@media(min-width:768px) {
+			.image.avatar img {
+				margin-top: -20px;
+			}
+		  }
+		  
+		  @media(min-width:1024px) {
+			.image.avatar img {
+				margin-top: -50px;
+			}
+		  }
 
 /* Footer */
 
 	#footer .icons {
-		margin: 1em 0 0 0;
+		margin: 0 0 0 0;
 	}
 
 		#footer .icons a {
